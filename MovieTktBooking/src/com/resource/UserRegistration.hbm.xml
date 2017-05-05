@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 5, 2017 4:40:20 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.bean.UserRegistration" table="mt_userdetails">
+  
+        <id name="userId" type="java.lang.Integer">
+            <column name="userId" />
+            <generator class="increment" />
+        </id>
+        <property name="firstName" type="java.lang.String">
+            <column name="FirstName" />
+        </property>
+        <property name="lastName" type="java.lang.String">
+            <column name="LastName" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="Password" />
+        </property>
+        <property name="contact" type="java.lang.String">
+            <column name="Contact" />
+        </property>
+        <property name="hintQuestion" type="java.lang.String">
+            <column name="HintQuestion" />
+        </property>
+        <property name="hintAnswer" type="java.lang.String">
+            <column name="HintAnswer" />
+        </property>
+        <property name="mailId" type="java.lang.String">
+            <column name="MailId" />
+        </property>
+    </class>
+</hibernate-mapping>

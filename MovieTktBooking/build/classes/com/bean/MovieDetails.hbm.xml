@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 5, 2017 11:25:47 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.bean.MovieDetails" table="MOVIEDETAILS">
+        <id name="movieId" type="int">
+            <column name="MOVIEID" />
+            <generator class="assigned" />
+        </id>
+        <property name="movieName" type="java.lang.String">
+            <column name="MOVIENAME" />
+        </property>
+        <property name="actor" type="java.lang.String">
+            <column name="ACTOR" />
+        </property>
+        <property name="actress" type="java.lang.String">
+            <column name="ACTRESS" />
+        </property>
+        <property name="director" type="java.lang.String">
+            <column name="DIRECTOR" />
+        </property>
+        <property name="releaseYear" type="java.lang.String">
+            <column name="RELEASEYEAR" />
+        </property>
+        <property name="rated" type="java.lang.String">
+            <column name="RATED" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 27, 2017 12:37:06 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.bean.TheatreDetails" table="THEATREDETAILS">
+        <id name="screenId" type="int">
+            <column name="SCREENID" />
+            <generator class="assigned" />
+        </id>
+        <property name="screenNumber" type="int">
+            <column name="SCREENNUMBER" />
+        </property>
+        <property name="boxseats" type="int">
+            <column name="BOXSEATS" />
+        </property>
+        <property name="goldseats" type="int">
+            <column name="GOLDSEATS" />
+        </property>
+        <property name="silverseats" type="int">
+            <column name="SILVERSEATS" />
+        </property>
+        <property name="theatreId" type="int">
+            <column name="THEATREID" />
+        </property>
+    </class>
+</hibernate-mapping>

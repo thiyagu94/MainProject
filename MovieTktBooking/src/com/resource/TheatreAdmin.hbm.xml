@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 6, 2017 5:22:55 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.bean.TheatreAdmin" table="Mt_Theatreadmindetails">
+        <id name="theatreId">
+            <column name="theatreid" />
+            <generator class="sequence">
+              <param name="sequence">s_mt_theatreadmindetails</param>  
+            </generator>  
+ 		</id>  
+        <property name="emailId" type="java.lang.String">
+            <column name="emailid" />
+        </property>
+        <property name="location" type="java.lang.String">
+            <column name="location" />
+        </property>
+        <property name="theatreName" type="java.lang.String">
+            <column name="theatrename" />
+        </property>
+        <property name="ownerName" type="java.lang.String">
+            <column name="ownername" />
+        </property>
+        <property name="mobileNumber" type="java.lang.String">
+            <column name="mobilenumber" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="password" />
+        </property>
+    </class>
+</hibernate-mapping>

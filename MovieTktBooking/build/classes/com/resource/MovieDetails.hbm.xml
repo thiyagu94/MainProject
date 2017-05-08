@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 5, 2017 11:25:47 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.bean.MovieDetails" table="mt_movie">
+        <id name="movieId" type="int">
+            <column name="movieid" />
+            <generator class="sequence" >
+            <param name="sequence">s_mt_movie</param>
+            </generator>
+        </id>
+        <property name="movieName" type="java.lang.String">
+            <column name="nameofmovie" />
+        </property>
+        <property name="actor" type="java.lang.String">
+            <column name="actor" />
+        </property>
+        <property name="actress" type="java.lang.String">
+            <column name="actress" />
+        </property>
+        <property name="director" type="java.lang.String">
+            <column name="director" />
+        </property>
+        <property name="releaseYear" type="java.lang.String">
+            <column name="releaseyear" />
+        </property>
+        <property name="rated" type="java.lang.String">
+            <column name="rated" />
+        </property>
+         <property name="description" type="java.lang.String">
+            <column name="description" />
+        </property>
+    </class>
+</hibernate-mapping>
